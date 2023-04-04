@@ -1,4 +1,4 @@
-package sanzuo6;
+//package sanzuo6;
 
 import javax.swing.*;
 import java.awt.*;
@@ -12,24 +12,24 @@ public class PaintJFrame extends
     public PaintJFrame(){
 
 
-        ;//±êÌâÀ¸ÄÚÈİ
+        ;//æ ‡é¢˜æ å†…å®¹
 
         this.setBounds(400,300,400,300);
 
-        (EXIT_ON_CLOSE);//´°¿Ú¹Ø±Õ°´Å¥µÄÉèÖÃ
+        (EXIT_ON_CLOSE);//çª—å£å…³é—­æŒ‰é’®çš„è®¾ç½®
 
-        this.getContentPane().add(new sanzuoye6.PaintJFrame.PaintCanvas());      //´´½¨×Ô¶¨Òå»­²¼×é¼ş
+        this.getContentPane().add(new sanzuoye6.PaintJFrame.PaintCanvas());      //åˆ›å»ºè‡ªå®šä¹‰ç”»å¸ƒç»„ä»¶
 
-        JPanel panel_radiobutton = new JPanel(); //Íø¸ñ²¼¾Ö
+        JPanel panel_radiobutton = new JPanel(); //ç½‘æ ¼å¸ƒå±€
 
         this.add(panel_radiobutton,);
 
 
 
 
-        ; //¶¨ÒåÂß¼­°´Å¥×éb
+        ; //å®šä¹‰é€»è¾‘æŒ‰é’®ç»„b
 
-        radiobutton_1 = new ;//´´½¨µ¥Ñ¡°´Å¥¡°Ö±Ïß¡±£¬³õÊ¼×´Ì¬Ñ¡ÖĞ
+        radiobutton_1 = new ;//åˆ›å»ºå•é€‰æŒ‰é’®â€œç›´çº¿â€ï¼Œåˆå§‹çŠ¶æ€é€‰ä¸­
 
         b.add(radiobutton_1);
 
@@ -37,7 +37,7 @@ public class PaintJFrame extends
 
 
 
-        radiobutton_2 = new ;//´´½¨µ¥Ñ¡°´Å¥¡°ÈÎÒâ¡±
+        radiobutton_2 = new ;//åˆ›å»ºå•é€‰æŒ‰é’®â€œä»»æ„â€
 
         b.add(radiobutton_2);
 
@@ -50,7 +50,7 @@ public class PaintJFrame extends
 
 
 
-    //»­²¼ÄÚ²¿Àà£¬ÏìÓ¦Êó±êÊÂ¼şºÍÊó±êÒÆ¶¯ÊÂ¼ş
+    //ç”»å¸ƒå†…éƒ¨ç±»ï¼Œå“åº”é¼ æ ‡äº‹ä»¶å’Œé¼ æ ‡ç§»åŠ¨äº‹ä»¶
 
     class PaintCanvas extends Canvas implements ,
 
@@ -65,107 +65,107 @@ public class PaintJFrame extends
             start=end=lastend=null;
 
 
-            ;//×¢²áÉÏÃæµÄÁ½¸ö½Ó¿Ú
+            ;//æ³¨å†Œä¸Šé¢çš„ä¸¤ä¸ªæ¥å£
 
 
             ;
 
         }
 
-        public void(MouseEvent ev)            //°´ÏÂÊó±êÊÂ¼ş´¦Àí·½·¨
+        public void(MouseEvent ev)            //æŒ‰ä¸‹é¼ æ ‡äº‹ä»¶å¤„ç†æ–¹æ³•
         {
 
-            if () //µ±Ö±Ïß±»Ñ¡ÖĞ
+            if () //å½“ç›´çº¿è¢«é€‰ä¸­
 
-                start = new ;//»ñµÃÊó±êÎ»ÖÃÖµ
+                start = new ;//è·å¾—é¼ æ ‡ä½ç½®å€¼
 
-            if () //µ±ÈÎÒâ±»Ñ¡ÖĞ
+            if () //å½“ä»»æ„è¢«é€‰ä¸­
 
-                end = new ;//»ñµÃÊó±êÎ»ÖÃÖµ
+                end = new ;//è·å¾—é¼ æ ‡ä½ç½®å€¼
 
         }
 
-        public void (MouseEvent ev)               //ÊÍ·ÅÊó±êÊÂ¼ş´¦Àí·½·¨
+        public void (MouseEvent ev)               //é‡Šæ”¾é¼ æ ‡äº‹ä»¶å¤„ç†æ–¹æ³•
         {
 
-            if (){ //µ±Ö±Ïß±»Ñ¡ÖĞ
+            if (){ //å½“ç›´çº¿è¢«é€‰ä¸­
 
-                end = new ;//»ñµÃÊó±êÎ»ÖÃÖµ
+                end = new ;//è·å¾—é¼ æ ‡ä½ç½®å€¼
 
 
-                ;//ÖØ»­
+                ;//é‡ç”»
 
             }
 
         }
 
-        public void mouseClicked(MouseEvent ev) {}         //µ¥»÷Êó±ê
+        public void mouseClicked(MouseEvent ev) {}         //å•å‡»é¼ æ ‡
 
-        public void mouseEntered(MouseEvent ev) {}         //Êó±ê½øÈë
+        public void mouseEntered(MouseEvent ev) {}         //é¼ æ ‡è¿›å…¥
 
-        public void mouseExited(MouseEvent ev) {}          //Êó±êÀë¿ª
+        public void mouseExited(MouseEvent ev) {}          //é¼ æ ‡ç¦»å¼€
 
-        public void mouseMoved(MouseEvent ev){}          //ÒÆ¶¯Êó±ê
+        public void mouseMoved(MouseEvent ev){}          //ç§»åŠ¨é¼ æ ‡
 
         public void
-        (MouseEvent ev)            //ÍÏ¶¯Êó±êÊÂ¼ş´¦Àí·½·¨
+        (MouseEvent ev)            //æ‹–åŠ¨é¼ æ ‡äº‹ä»¶å¤„ç†æ–¹æ³•
 
         {
 
-            if (){ //µ±Ö±Ïß±»Ñ¡ÖĞ
+            if (){ //å½“ç›´çº¿è¢«é€‰ä¸­
 
 
-                ; //Çë×Ô¼ºÏëÓ¦¸ÃÌîÊ²Ã´
+                ; //è¯·è‡ªå·±æƒ³åº”è¯¥å¡«ä»€ä¹ˆ
 
-                end = new ;//»ñµÃÊó±êÎ»ÖÃÖµ
-
-            }
-
-            if () {//µ±ÈÎÒâ±»Ñ¡ÖĞ
-
-
-                ; //Çë×Ô¼ºÏëÓ¦¸ÃÌîÊ²Ã´
-
-                end = new ;//»ñµÃÊó±êÎ»ÖÃÖµ
+                end = new ;//è·å¾—é¼ æ ‡ä½ç½®å€¼
 
             }
 
+            if () {//å½“ä»»æ„è¢«é€‰ä¸­
 
-            ;                                    //µ÷ÓÃÖØ»­
+
+                ; //è¯·è‡ªå·±æƒ³åº”è¯¥å¡«ä»€ä¹ˆ
+
+                end = new ;//è·å¾—é¼ æ ‡ä½ç½®å€¼
+
+            }
+
+
+            ;                                    //è°ƒç”¨é‡ç”»
 
         }
 
 
 
         public void
-        //ÔÚCanvasÉÏ×÷Í¼
+        //åœ¨Canvasä¸Šä½œå›¾
 
         {
 
-            if (){ //µ±Ö±Ïß±»Ñ¡ÖĞ
+            if (){ //å½“ç›´çº¿è¢«é€‰ä¸­
 
                 if (start!=null && lastend!=null){
 
                     g.setColor();
 
-                    g.;//ÓÃ±³¾°É«»­Ïß¼´²Á³ıÔ­Ïß
+                    g.;//ç”¨èƒŒæ™¯è‰²ç”»çº¿å³æ“¦é™¤åŸçº¿
 
-                    g.setColor(Color.blue);//ÉèÖÃ»­ÏßÑÕÉ«
+                    g.setColor(Color.blue);//è®¾ç½®ç”»çº¿é¢œè‰²
 
-                    g.;//»­×îÖÕµÄÖ±Ïß
+                    g.;//ç”»æœ€ç»ˆçš„ç›´çº¿
 
                 }
 
             }
 
-            if () { //µ±ÈÎÒâ±»Ñ¡ÖĞ
+            if () { //å½“ä»»æ„è¢«é€‰ä¸­
 
                 if (start!=null && end!=null)
                 {
 
-                    g.setColor(Color.blue);//ÉèÖÃ»­ÏßÑÕÉ«
+                    g.setColor(Color.blue);//è®¾ç½®ç”»çº¿é¢œè‰²
 
-                    g.;//»­×îÖÕµÄÖ±Ïß
+                    g.;//ç”»æœ€ç»ˆçš„ç›´çº¿
 
                 }
 
@@ -173,7 +173,7 @@ public class PaintJFrame extends
 
         }
 
-        public void update(Graphics g)                     //¸üĞÂ×é¼ş
+        public void update(Graphics g)                     //æ›´æ–°ç»„ä»¶
 
         {
 
@@ -181,7 +181,7 @@ public class PaintJFrame extends
 
         }
 
-    }//PaintCanvasÀà½áÊø
+    }//PaintCanvasç±»ç»“æŸ
 
 
 
